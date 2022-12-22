@@ -79,7 +79,7 @@ const HorizontalScrollbarNavInner = styled.div`
 `;
 
 const HorizontalScrollbarTrack = styled.div`
-  background-color: rgb(213, 213, 213);
+  background-color: #636E72;
   left: 0;
   position: absolute;
   right: 0;
@@ -87,7 +87,7 @@ const HorizontalScrollbarTrack = styled.div`
 `;
 
 const HorizontalScrollbarThumb = styled.div`
-  background-color: #848484;
+  background-color: #2D3436;
   position: absolute;
   border-radius: 4px;
   height: 4px;
