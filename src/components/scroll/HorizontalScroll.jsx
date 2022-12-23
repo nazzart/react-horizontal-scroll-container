@@ -3,10 +3,6 @@ import Container from "@mui/material/Container";
 import styled from "@emotion/styled";
 import Box from '@mui/material/Box';
 
-const HorizontalContainerOuter = styled.div`
-  overflow: hidden;
-`;
-
 const HorizontalContentOuter = styled.div`
   -ms-overflow-style: none;
   overflow: scroll;
@@ -15,14 +11,6 @@ const HorizontalContentOuter = styled.div`
   ::-webkit-scrollbar {
     display: none;
   }
-`;
-
-const HorizontalContainerInner = styled.div`
-  display: flex;
-  height: 100%;
-  overflow: visible;
-  position: relative;
-  flex-direction: column;
 `;
 
 const HorizontalContentInner = styled.div`
@@ -246,27 +234,23 @@ const HorizontalScroll = ({ children, className, ...props }) => {
     }, [handleThumbMousemove, handleThumbMouseup]);
     return (
         <>
-            <HorizontalContainerOuter>
-                <HorizontalContentOuter onMouseDown={handleThumbMousedown} ref={contentRef} {...props}>
-                    <Container
-                        sx={{
-                            mt: 3,
-                            ml: "auto",
-                            mr: "auto",
-                        }}>
-                        <HorizontalContainerInner>
-                            <HorizontalContentInner>
-                                {childrenWithAdjustedProps}
-                                <Box sx={{
-                                    minWidth: 3,
-                                    display: "block",
-                                    paddingRight: "calc(((100vw - 100%) / 2) - 24px)"
-                                }}></Box>
-                            </HorizontalContentInner>
-                        </HorizontalContainerInner>
-                    </Container>
-                </HorizontalContentOuter>
-            </HorizontalContainerOuter>
+            <HorizontalContentOuter onMouseDown={handleThumbMousedown} ref={contentRef} {...props}>
+                <Container
+                    sx={{
+                        mt: 3,
+                        ml: "auto",
+                        mr: "auto",
+                    }}>
+                        <HorizontalContentInner>
+                            {childrenWithAdjustedProps}
+                            <Box sx={{
+                                minWidth: 3,
+                                display: "block",
+                                paddingRight: "calc(((100vw - 100%) / 2) - 24px)"
+                            }}></Box>
+                        </HorizontalContentInner>
+                </Container>
+            </HorizontalContentOuter>
             <Container>
                 <HorizontalScrollbarNav>
                     <HorizontalScrollbarNavInner>
