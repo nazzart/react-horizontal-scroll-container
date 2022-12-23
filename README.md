@@ -7,6 +7,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 This is a DEMO of horizontal scrolling content. Currently, the content can be scrolled only from the right side.
 Example is using [MUI](https://mui.com/material-ui/getting-started/overview/) as a React component library, but can be adjusted to work with custom / other libraries as well.
 
+![Alt text](public/horizontal-scroll-demo.png?raw=true "Title")
+
 ## Available Scripts
 
 In the project directory, you can run:
