@@ -4,7 +4,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # Project Description
 
-This is a DEMO of horizontal scrolling content. Currently, the content can be scrolled only from the right side.
+Bellow is a demo of horizontal scrolling content. Currently, the content can be scrolled only from the right side.
+Custom scrollbar is implemented which looks and feels same in all modern browsers.
+
 Example is using [MUI](https://mui.com/material-ui/getting-started/overview/) as a React component library, but can be adjusted to work with custom / other libraries as well.
 
 ![Alt text](public/horizontal-scroll-demo.png?raw=true "Title")
